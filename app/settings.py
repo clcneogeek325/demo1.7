@@ -84,9 +84,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
-TEMPLATE_DIRS = [BASE_DIR,'plantillas/']
+TEMPLATE_DIRS = [BASE_DIR,'plantillas']
 
 AUTH_USER_MODEL = 'auth.User'
