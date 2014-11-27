@@ -5,7 +5,7 @@
     <title>Ejemplo forms</title>
 </head>
 <body>
-    <form action="" method="POST">
+ <form enctype="multipart/form-data" method="POST" action="{% url 'form' %}">
        {% csrf_token %}
        {{form.as_p}}
        <button>Guardar</button>

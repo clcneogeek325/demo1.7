@@ -20,7 +20,7 @@ def formulario(request):
 
                 return HttpResponseRedirect('/')
             else:
-                form = personaForm(request.POST,request.FILES['foto'])
+                form = personaForm(request.POST,request.FILES)
                 ctx = {'form':form}
                 return render_to_response('form.html',ctx,
                             context_instance=RequestContext(request))
